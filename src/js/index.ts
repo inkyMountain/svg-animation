@@ -1,3 +1,5 @@
 import { SVG } from '@svgdotjs/svg.js';
+import '../styles/index.less';
 
-console.log(SVG);
+const draw = SVG().addTo('#container').size(100, 100);
+draw.circle(100).attr({fill: 'white'});
